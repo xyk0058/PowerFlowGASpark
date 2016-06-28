@@ -1,5 +1,7 @@
 package com.dhcc.powerflow;
 
+import java.io.Serializable;
+
 import com.dhcc.Global.Variable;
 import com.dhcc.Model.Branch;
 import com.dhcc.Model.Gene;
@@ -8,7 +10,7 @@ import com.dhcc.Model.Load;
 import com.dhcc.Model.Tran;
 import com.dhcc.util.MatrixUtil;
 
-public class ProcData {
+public class ProcData implements Serializable {
 	
 	private Variable variable = null;
 	

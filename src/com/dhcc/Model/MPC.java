@@ -1,6 +1,8 @@
 package com.dhcc.Model;
 
-public class MPC {
+import java.io.Serializable;
+
+public class MPC implements Serializable{
 	private double[][] bus = null;
 	private double[][] branch = null;
 	private double[][] gen = null;

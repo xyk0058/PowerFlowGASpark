@@ -1,12 +1,14 @@
 package com.dhcc.Global;
 
+import java.io.Serializable;
+
 import com.dhcc.Model.Branch;
 import com.dhcc.Model.Gene;
 import com.dhcc.Model.Info;
 import com.dhcc.Model.Load;
 import com.dhcc.Model.Tran;
 
-public class Variable {
+public class Variable implements Serializable{
 	
 	public int PQ = 1;
 	public int PV = 2;

@@ -1,6 +1,8 @@
 package com.dhcc.Model;
 
-public class Functions implements Function {
+import java.io.Serializable;
+
+public class Functions implements Function, Serializable {
 	
 	//n is gen number 
 	public double f(double x, int n) {

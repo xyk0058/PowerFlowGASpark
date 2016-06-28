@@ -1,12 +1,14 @@
 package com.dhcc.powerflow;
 
+import java.io.Serializable;
+
 import com.dhcc.Global.Variable;
 import com.dhcc.Model.Gene;
 import com.dhcc.Model.Info;
 import com.dhcc.Model.Load;
 import com.dhcc.util.IOUtil;
 
-public class NewtonPowerFlow {
+public class NewtonPowerFlow implements Serializable {
 	private double jacob[][];
 	private Variable variable = null;
 	
@@ -190,11 +192,7 @@ public class NewtonPowerFlow {
 				Um[i] = Um[i]-(Um[i]*a);
 			}
 		}
-//		ProcData pd = new ProcData();
-//		System.out.println("\nPG QG PL QL");
-//		pd.CalBusFlow();
-//		System.out.println("\nloss");
-//		pd.BranchFlow();
+
 		return true;
 	}
 

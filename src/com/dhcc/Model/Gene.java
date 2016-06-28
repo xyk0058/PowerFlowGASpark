@@ -1,6 +1,8 @@
 package com.dhcc.Model;
 
-public class Gene {
+import java.io.Serializable;
+
+public class Gene implements Serializable {
 	private int i;
 	private int j;//type
 	private double p;//�й�����

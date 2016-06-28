@@ -1,6 +1,8 @@
 package com.dhcc.Model;
 
-public class Info {
+import java.io.Serializable;
+
+public class Info implements Serializable {
 	//系统节点的总数
 	private int N;
 	//变压器支路总数

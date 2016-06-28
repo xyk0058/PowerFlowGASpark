@@ -1,8 +1,10 @@
 package com.dhcc.Model;
 
+import java.io.Serializable;
+
 import com.dhcc.util.Complex;
 
-public class BusData {
+public class BusData implements Serializable {
 	
 	private int id,type;
 	private double u,a,pl,ql,pg,qg,u0,qmax,qmin,g,b,sump,sumq;

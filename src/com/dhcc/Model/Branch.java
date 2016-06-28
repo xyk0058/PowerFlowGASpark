@@ -1,6 +1,8 @@
 package com.dhcc.Model;
 
-public class Branch {
+import java.io.Serializable;
+
+public class Branch implements Serializable {
 	//输电线路端点
 	private int from;
 	//输电线路端点

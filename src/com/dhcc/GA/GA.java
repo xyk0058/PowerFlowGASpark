@@ -282,18 +282,18 @@ public class GA {
 			}
 		});
 
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		for (int i = 0; i < best.list.size(); ++i) {
-			Result res = best.list.get(i);
-			double[] X = res.getX();
-			System.out.println("fitness:" + res.getFitness());
-			for (int j = 0; j < X.length; ++j) {
-				System.out.print(X[j] + " ");
-			}
-			System.out.println();
-		}
+//		System.out.println();
+//		System.out.println();
+//		System.out.println();
+//		for (int i = 0; i < best.list.size(); ++i) {
+//			Result res = best.list.get(i);
+//			double[] X = res.getX();
+//			System.out.println("fitness:" + res.getFitness());
+//			for (int j = 0; j < X.length; ++j) {
+//				System.out.print(X[j] + " ");
+//			}
+//			System.out.println();
+//		}
 		return best.list;
 	}
 

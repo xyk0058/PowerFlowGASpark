@@ -1,6 +1,8 @@
 package com.dhcc.Model;
 
-public class Tran {
+import java.io.Serializable;
+
+public class Tran implements Serializable {
 	private int from;
 	private int to;
 	private double R;

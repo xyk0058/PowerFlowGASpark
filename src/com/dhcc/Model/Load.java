@@ -1,6 +1,8 @@
 package com.dhcc.Model;
 
-public class Load {
+import java.io.Serializable;
+
+public class Load implements Serializable {
 	private int i;
 	private double p;
 	private double q;

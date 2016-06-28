@@ -1,8 +1,10 @@
 package com.dhcc.Model;
 
+import java.io.Serializable;
+
 import com.dhcc.util.Complex;
 
-public class BranchData {
+public class BranchData implements Serializable {
 	
 	private int noa,nob,type;
 	private double r,x,b,k;
