@@ -355,7 +355,7 @@ public class ProcData implements Serializable {
 		System.out.println(from +" "+ to +" "+ dp*100 +" "+ dq*100);
 	}
 	
-	public void BranchFlow() {
+	public double BranchFlow() {
 		Branch[] br = variable.getBranch();
 		Tran[] trans = variable.getTrans();
 		Info info = variable.getPf_info();
@@ -417,6 +417,7 @@ public class ProcData implements Serializable {
 			System.out.println(from +" "+ to +" "+ pij*100 +" "+ qij*100 +" "+ pji*100 +" "+ qji*100 +" "+ dpb*100 +" "+ dqb*100);
 		}
 		System.out.println("sum loss： "+ph*100 +" " + qh*100);
+		return ph * 100 + qh * 100;
 	}
 	
 }
